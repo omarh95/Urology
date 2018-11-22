@@ -21,7 +21,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="d0K-9Y-fwH"/>
+                    <navigationItem key="navigationItem" id="d0K-9Y-fwH">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="G3N-Q3-0BA">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="BYZ-38-t0r" id="FHC-nr-6AV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="164" y="-54.422788605697157"/>

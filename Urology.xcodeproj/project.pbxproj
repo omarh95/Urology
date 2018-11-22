@@ -14,6 +14,7 @@
 		4E1880C921A7257000728AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1880C721A7257000728AEA /* LaunchScreen.storyboard */; };
 		4E1880D421A7257000728AEA /* UrologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1880D321A7257000728AEA /* UrologyTests.swift */; };
 		4E1880DF21A7257000728AEA /* UrologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1880DE21A7257000728AEA /* UrologyUITests.swift */; };
+		4E5250B921A76CF900B4C01E /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5250B821A76CF900B4C01E /* UIViewController+Alerts.swift */; };
 		8E0D07E39FB7BB45D7FCE833 /* Pods_Urology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED485E94AB1C778A7E2085D8 /* Pods_Urology.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		4E1880DA21A7257000728AEA /* UrologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1880DE21A7257000728AEA /* UrologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrologyUITests.swift; sourceTree = "<group>"; };
 		4E1880E021A7257000728AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5250B821A76CF900B4C01E /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		ED485E94AB1C778A7E2085D8 /* Pods_Urology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 		4E1880B221A7256F00728AEA = {
 			isa = PBXGroup;
 			children = (
+				4E5250B721A76CC800B4C01E /* Extensions */,
 				4E1880BD21A7256F00728AEA /* Urology */,
 				4E1880D221A7257000728AEA /* UrologyTests */,
 				4E1880DD21A7257000728AEA /* UrologyUITests */,
@@ -130,6 +133,14 @@
 				4E1880E021A7257000728AEA /* Info.plist */,
 			);
 			path = UrologyUITests;
+			sourceTree = "<group>";
+		};
+		4E5250B721A76CC800B4C01E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E5250B821A76CF900B4C01E /* UIViewController+Alerts.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6AED3347261CB489311FE826 /* Frameworks */ = {
@@ -283,15 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Urology/Pods-Urology-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 			);
@@ -305,15 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Urology-checkManifestLockResult.txt",
 			);
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E1880C121A7256F00728AEA /* ViewController.swift in Sources */,
+				4E5250B921A76CF900B4C01E /* UIViewController+Alerts.swift in Sources */,
 				4E1880BF21A7256F00728AEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

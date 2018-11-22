@@ -14,6 +14,8 @@ class ViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Urology"
+        
         // Do any additional setup after loading the view, typically from a nib.
 
         //MARK: - Urination Section
@@ -74,10 +76,27 @@ class ViewController: FormViewController {
             +++ Section("Other Symptoms")
             <<< MultipleSelectorRow<String>() { row in
                 row.title = "Other Symptoms"
+                row.selectorTitle = "Symptoms"
                 row.options = ["Fatigue", "Pain", "Naseua", "Dizziness"]
+            }
+            
+            
+            +++ Section()
+            <<< ButtonRow() { row in
+                row.title = "Save Entry"
+                row.onCellSelection({ (_, buttonRow) in
+                    self.showAlert(withTitle: "Success",
+                              withMessage: "Your entry has been saved to your phone",
+                              withButtonTitle: "OK")
+                })
             }
     }
 
+    @IBAction func shareButtonPressed(_ sender: Any) {
+        showAlert(withTitle: "Success",
+                  withMessage: "Your entries have successfully emailed to your physician",
+                  withButtonTitle: "OK")
+    }
     
 }
 
