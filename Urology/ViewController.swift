@@ -7,19 +7,29 @@
 //
 
 import UIKit
+import Eureka
 
-class ViewController: UIViewController {
+class ViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        form +++ Section("Time of Urination")
+            <<< TimeRow(){ row in
+                row.title = "Time of urination"
+            }
+            <<< IntRow(){
+                $0.title = "Amount of Urination"
+                $0.placeholder = "Enter Amount Here"
+            }
+            +++ Section("Section2")
+            <<< DateRow(){
+                $0.title = "Date Row"
+                $0.value = Date(timeIntervalSinceReferenceDate: 0)
+        }
+        
     }
-
 
 }
 

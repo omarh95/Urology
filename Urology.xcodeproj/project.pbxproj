@@ -14,6 +14,7 @@
 		4E1880C921A7257000728AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1880C721A7257000728AEA /* LaunchScreen.storyboard */; };
 		4E1880D421A7257000728AEA /* UrologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1880D321A7257000728AEA /* UrologyTests.swift */; };
 		4E1880DF21A7257000728AEA /* UrologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1880DE21A7257000728AEA /* UrologyUITests.swift */; };
+		8E0D07E39FB7BB45D7FCE833 /* Pods_Urology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED485E94AB1C778A7E2085D8 /* Pods_Urology.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A498B9075286659066B46C7 /* Pods-Urology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urology.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urology/Pods-Urology.release.xcconfig"; sourceTree = "<group>"; };
+		3AF92D4FAC7BB05F9F8B3745 /* Pods-Urology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urology/Pods-Urology.debug.xcconfig"; sourceTree = "<group>"; };
 		4E1880BB21A7256F00728AEA /* Urology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Urology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1880BE21A7256F00728AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E1880C021A7256F00728AEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		4E1880DA21A7257000728AEA /* UrologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1880DE21A7257000728AEA /* UrologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrologyUITests.swift; sourceTree = "<group>"; };
 		4E1880E021A7257000728AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED485E94AB1C778A7E2085D8 /* Pods_Urology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0D07E39FB7BB45D7FCE833 /* Pods_Urology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				4E1880D221A7257000728AEA /* UrologyTests */,
 				4E1880DD21A7257000728AEA /* UrologyUITests */,
 				4E1880BC21A7256F00728AEA /* Products */,
+				C38B757556AC000CE8588A6C /* Pods */,
+				6AED3347261CB489311FE826 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = UrologyUITests;
 			sourceTree = "<group>";
 		};
+		6AED3347261CB489311FE826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED485E94AB1C778A7E2085D8 /* Pods_Urology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C38B757556AC000CE8588A6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AF92D4FAC7BB05F9F8B3745 /* Pods-Urology.debug.xcconfig */,
+				3A498B9075286659066B46C7 /* Pods-Urology.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E1880E321A7257000728AEA /* Build configuration list for PBXNativeTarget "Urology" */;
 			buildPhases = (
+				A2312CC35B99DCD1984B1301 /* [CP] Check Pods Manifest.lock */,
 				4E1880B721A7256F00728AEA /* Sources */,
 				4E1880B821A7256F00728AEA /* Frameworks */,
 				4E1880B921A7256F00728AEA /* Resources */,
+				54900D401445932973F3A0FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54900D401445932973F3A0FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Urology/Pods-Urology-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urology/Pods-Urology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2312CC35B99DCD1984B1301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Urology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E1880B721A7256F00728AEA /* Sources */ = {
@@ -428,6 +501,7 @@
 		};
 		4E1880E421A7257000728AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF92D4FAC7BB05F9F8B3745 /* Pods-Urology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +519,7 @@
 		};
 		4E1880E521A7257000728AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A498B9075286659066B46C7 /* Pods-Urology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
